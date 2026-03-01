@@ -62,6 +62,24 @@ chmod +x build.sh
 ./build.sh
 ```
 
+## 效果展示
+
+### 系统框架
+
+![系统框架](images/system_overview.png)
+
+### 动态场景处理效果
+
+![动态场景](images/dynamic_scene_result.png)
+
+### 特征点过滤
+
+![特征过滤](images/feature_filtering.png)
+
+### SLAM 轨迹
+
+![SLAM轨迹](images/slam_trajectory.png)
+
 ## 适用场景
 
 - 自动驾驶视觉定位
