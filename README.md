@@ -1,4 +1,4 @@
-﻿# YOLOv5 + ORB-SLAM3 路面动态场景视觉定位
+# YOLOv5 + ORB-SLAM3 路面动态场景视觉定位
 
 自动驾驶和机器人导航中，路面上的行人、车辆等动态障碍物会严重干扰视觉 SLAM 的定位精度——动态物体的特征点在帧间不断变化，导致位姿估计漂移甚至丢失。本项目将 YOLOv5 目标检测与 ORB-SLAM3 视觉定位系统结合，先用 YOLOv5 识别并剔除动态物体区域的特征点，再用 ORB-SLAM3 进行稠密双目重建和定位，从而在车流、人流密集的道路场景中也能保持稳定的定位精度。
 
@@ -95,6 +95,6 @@ chmod +x build.sh
 - ROS
 - OpenCV、Eigen3、Pangolin
 
-## License
+## 许可证
 
-GPLv3 License
+GPLv3 许可证
