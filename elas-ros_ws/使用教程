@@ -1,0 +1,20 @@
+step1:
+
+cd /home/slam/elas-ros_ws
+source devel/setup.bash
+roslaunch elas_ros kitti.launch
+
+
+
+
+step2:
+
+cd /home/slam/datasets
+rosbag play -r 0.4 kitti_2011_09_29_drive_0071_synced.bag
+
+
+
+
+step3:
+rviz -d /home/slam/elas-ros_ws/src/cyphy-elas-ros/rviz.rviz
+

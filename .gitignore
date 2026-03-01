@@ -1,0 +1,35 @@
+﻿# Build
+build/
+devel/
+
+# PyTorch models
+*.pt
+*.pth
+*.torchscript
+
+# Data
+*.txt
+!CMakeLists*.txt
+!README*.txt
+
+# macOS
+.DS_Store
+._*
+
+# IDE
+.idea/
+.vscode/
+
+# Duplicate files
+*(1)*
+*(2)*
+*(3)*
+
+# Binary
+*.o
+*.so
+*.a
+*.dylib
+
+# Logs
+*.log

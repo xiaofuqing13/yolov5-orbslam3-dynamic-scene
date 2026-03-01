@@ -1,0 +1,32 @@
+<launch>
+    <!-- orb_slam_dense -->
+    <node pkg="YOLO_ORB_SLAM3_with_pointcloud_map" type="Stereo" name="Stereo" args="/home/slam/YOLOv5_ORBSLAM3_dense_stereo/Vocabulary/ORBvoc.txt /home/slam/YOLOv5_ORBSLAM3_dense_stereo/Examples/ROS/YOLO_ORB_SLAM3_with_pointcloud_map/kitti.yaml false" output="screen" >
+        <param name="disp_min" type="int" value="0"/>
+        <param name="disp_max" type="int" value="255"/>
+        <param name="support_threshold" type="double" value="0.95"/>
+        <param name="support_texture" type="int" value="10"/>
+        <param name="candidate_stepsize" type="int" value="5"/>
+        <param name="incon_window_size" type="int" value="5"/>
+        <param name="incon_threshold" type="int" value="5"/>
+        <param name="incon_min_support" type="int" value="5"/>
+        <param name="add_corners" type="bool" value="0"/>
+        <param name="grid_size" type="int" value="50"/>
+        <param name="beta" type="double" value="0.02"/>
+        <param name="gamma" type="double" value="3"/>
+        <param name="sigma" type="double" value="1"/>
+        <param name="sradius" type="double" value="2"/>
+        <param name="match_texture" type="int" value="1"/>
+        <param name="lr_threshold" type="int" value="4"/>
+        <param name="speckle_sim_threshold" type="double" value="1"/>
+        <param name="speckle_size" type="int" value="200"/>
+        <param name="ipol_gap_width" type="int" value="300"/>
+        <param name="filter_median" type="bool" value="0"/>
+        <param name="filter_adaptive_mean" type="bool" value="1"/>
+        <param name="postprocess_only_left" type="bool" value="1"/>
+        <param name="subsampling" type="bool" value="0"/>
+        <param name="approximate_sync" value="true" />
+        <param name="queue_size" type="int" value="5"/>
+    </node>
+
+
+</launch>
